@@ -1,0 +1,266 @@
+{
+  "pageElement" : {
+    "pageElements" : [ {
+      "definition" : {
+        "fragmentStyle" : {
+          "marginLeft" : "auto",
+          "marginRight" : "auto",
+          "marginTop" : "4",
+          "maxWidth" : "1500px"
+        },
+        "gutters" : true,
+        "indexed" : true,
+        "modulesPerRow" : 3,
+        "numberOfColumns" : 3,
+        "reverseOrder" : false,
+        "rowViewports" : [ {
+          "id" : "landscapeMobile",
+          "rowViewportDefinition" : {
+            "modulesPerRow" : 1
+          }
+        }, {
+          "id" : "portraitMobile",
+          "rowViewportDefinition" : { }
+        }, {
+          "id" : "tablet",
+          "rowViewportDefinition" : { }
+        } ],
+        "verticalAlignment" : "top"
+      },
+      "pageElements" : [ {
+        "definition" : {
+          "columnViewports" : [ {
+            "columnViewportDefinition" : {
+              "size" : 12
+            },
+            "id" : "landscapeMobile"
+          }, {
+            "columnViewportDefinition" : { },
+            "id" : "portraitMobile"
+          }, {
+            "columnViewportDefinition" : { },
+            "id" : "tablet"
+          } ],
+          "size" : 2
+        },
+        "pageElements" : [ {
+          "definition" : {
+            "fragmentStyle" : {
+              "minWidth" : "180px"
+            },
+            "widgetInstance" : {
+              "widgetConfig" : {
+                "displayStyle" : "ddmTemplate_48769",
+                "allAssetVocabularies" : "false",
+                "displayStyleGroupId" : "20119",
+                "assetVocabularyIds" : "48733"
+              },
+              "widgetName" : "com_liferay_asset_categories_navigation_web_portlet_AssetCategoriesNavigationPortlet"
+            }
+          },
+          "type" : "Widget"
+        } ],
+        "type" : "Column"
+      }, {
+        "definition" : {
+          "columnViewports" : [ {
+            "columnViewportDefinition" : {
+              "size" : 12
+            },
+            "id" : "landscapeMobile"
+          }, {
+            "columnViewportDefinition" : { },
+            "id" : "portraitMobile"
+          }, {
+            "columnViewportDefinition" : { },
+            "id" : "tablet"
+          } ],
+          "size" : 6
+        },
+        "pageElements" : [ {
+          "definition" : {
+            "fragmentStyle" : {
+              "maxWidth" : "800px",
+              "overflow" : "hidden",
+              "paddingLeft" : "3",
+              "paddingRight" : "3"
+            },
+            "indexed" : true,
+            "layout" : {
+              "borderWidth" : 0,
+              "marginBottom" : 0,
+              "marginLeft" : 0,
+              "marginRight" : 0,
+              "marginTop" : 0,
+              "opacity" : 100,
+              "paddingBottom" : 0,
+              "paddingLeft" : 1,
+              "paddingRight" : 1,
+              "paddingTop" : 0,
+              "widthType" : "Fixed"
+            }
+          },
+          "pageElements" : [ {
+            "definition" : {
+              "fragment" : {
+                "key" : "BASIC_COMPONENT-heading"
+              },
+              "fragmentConfig" : {
+                "headingLevel" : "h2"
+              },
+              "fragmentFields" : [ {
+                "id" : "element-text",
+                "value" : {
+                  "fragmentLink" : { },
+                  "text" : {
+                    "mapping" : {
+                      "fieldKey" : "BlogsEntry_title",
+                      "itemReference" : {
+                        "contextSource" : "DisplayPageItem"
+                      }
+                    }
+                  }
+                }
+              } ],
+              "fragmentStyle" : {
+                "marginBottom" : "4",
+                "textAlign" : "center"
+              },
+              "indexed" : true
+            },
+            "type" : "Fragment"
+          }, {
+            "definition" : {
+              "fragment" : {
+                "key" : "BASIC_COMPONENT-paragraph"
+              },
+              "fragmentConfig" : { },
+              "fragmentFields" : [ {
+                "id" : "element-text",
+                "value" : {
+                  "fragmentLink" : { },
+                  "text" : {
+                    "mapping" : {
+                      "fieldKey" : "BlogsEntry_subtitle",
+                      "itemReference" : {
+                        "contextSource" : "DisplayPageItem"
+                      }
+                    }
+                  }
+                }
+              } ],
+              "fragmentStyle" : {
+                "marginLeft" : "auto",
+                "marginRight" : "auto",
+                "paddingLeft" : "3",
+                "textAlign" : "justify"
+              },
+              "indexed" : true
+            },
+            "type" : "Fragment"
+          }, {
+            "definition" : {
+              "fragment" : {
+                "key" : "BASIC_COMPONENT-image"
+              },
+              "fragmentConfig" : {
+                "imageSize" : "w-100"
+              },
+              "fragmentFields" : [ {
+                "id" : "image-square",
+                "value" : {
+                  "fragmentImage" : {
+                    "url" : {
+                      "mapping" : {
+                        "fieldKey" : "BlogsEntry_coverImage",
+                        "itemReference" : {
+                          "contextSource" : "DisplayPageItem"
+                        }
+                      }
+                    }
+                  },
+                  "fragmentLink" : { }
+                }
+              } ],
+              "fragmentStyle" : {
+                "marginBottom" : "4",
+                "marginTop" : "4",
+                "maxWidth" : "850px",
+                "overflow" : "hidden",
+                "textAlign" : "center"
+              },
+              "indexed" : true
+            },
+            "type" : "Fragment"
+          }, {
+            "definition" : {
+              "fragment" : {
+                "key" : "BASIC_COMPONENT-paragraph"
+              },
+              "fragmentConfig" : { },
+              "fragmentFields" : [ {
+                "id" : "element-text",
+                "value" : {
+                  "fragmentLink" : { },
+                  "text" : {
+                    "mapping" : {
+                      "fieldKey" : "BlogsEntry_content",
+                      "itemReference" : {
+                        "contextSource" : "DisplayPageItem"
+                      }
+                    }
+                  }
+                }
+              } ],
+              "fragmentStyle" : {
+                "marginBottom" : "3",
+                "textAlign" : "justify"
+              },
+              "indexed" : true
+            },
+            "type" : "Fragment"
+          } ],
+          "type" : "Section"
+        } ],
+        "type" : "Column"
+      }, {
+        "definition" : {
+          "columnViewports" : [ {
+            "columnViewportDefinition" : {
+              "size" : 12
+            },
+            "id" : "landscapeMobile"
+          }, {
+            "columnViewportDefinition" : { },
+            "id" : "portraitMobile"
+          }, {
+            "columnViewportDefinition" : { },
+            "id" : "tablet"
+          } ],
+          "size" : 4
+        },
+        "pageElements" : [ {
+          "definition" : {
+            "fragmentStyle" : {
+              "maxWidth" : "550px",
+              "minWidth" : "400px"
+            },
+            "widgetInstance" : {
+              "widgetConfig" : { },
+              "widgetName" : "com_liferay_comment_page_comments_web_portlet_PageCommentsPortlet"
+            }
+          },
+          "type" : "Widget"
+        } ],
+        "type" : "Column"
+      } ],
+      "type" : "Row"
+    } ],
+    "type" : "Root"
+  },
+  "settings" : {
+    "colorSchemeName" : "01",
+    "themeName" : "gx2 teste theme"
+  },
+  "version" : 1.1
+}
