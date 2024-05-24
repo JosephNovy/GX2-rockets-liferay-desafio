@@ -1,0 +1,43 @@
+body.has-edit-mode-menu .mini-cart-fragment {
+	min-height: 64px;
+}
+
+body.has-edit-mode-menu .mini-cart-fragment .mini-cart.is-open .mini-cart-overlay,
+body.has-edit-mode-menu .mini-cart-fragment .mini-cart.is-open .mini-cart-wrapper {
+	display: none;
+}
+.mini-cart-fragment .mini-cart.is-open .mini-cart-overlay,
+.mini-cart-fragment .mini-cart.is-open .mini-cart-wrapper {
+	position: fixed;
+}
+
+.mini-cart-fragment .mini-cart:not(.is-open) .mini-cart-overlay,
+.mini-cart-fragment .mini-cart:not(.is-open) .mini-cart-wrapper {
+	display: none;
+}
+
+.mini-cart{
+    z-index: 9 !important;
+    height: 100vh !important;
+}
+.mini-cart-opener .lexicon-icon{
+    width: 24px !important;
+    height: 24px !important;
+}
+.mini-cart:not(.is-open) .mini-cart-wrapper{
+    display: none;
+}
+.mini-cart-wrapper{
+    position: fixed !important;
+    box-shadow: 3px 2px 17px black;
+    width: 800px !important;
+    @media (max-width:1200px) {
+        width: 600px !important;
+    }
+    @media (max-width:650px) {
+        width: 100% !important;
+    }
+}
+.mini-cart-overlay{
+    height: 110% !important;
+}
